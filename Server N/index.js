@@ -11,9 +11,6 @@ app.use(cors());
 const URI = process.env.uri || undefined;
 
 
-
-
-
 let allfood = [
     {
         id: 1,
@@ -38,13 +35,13 @@ let allfood = [
         name: 'Pasta',
         price: 400,
 
-    },
+    }
 ]
 
 
 
 app.get('/test', (req, res) => {
-    res.send(allfood)
+    res.send(allfood);
 })
 
 app.listen(port, () => {
