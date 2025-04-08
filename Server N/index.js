@@ -8,7 +8,7 @@ dotenv.config();
 app.use (express.json());
 app.use (bodyparser.urlencoded({extended: true}));
 app.use(cors());
-const URI = process.env.uri || undefined;
+// const URI = process.env.uri || undefined;
 
 
 let allfood = [
@@ -37,8 +37,6 @@ let allfood = [
 
     }
 ]
-
-
 
 app.get('/test', (req, res) => {
     res.send(allfood);
